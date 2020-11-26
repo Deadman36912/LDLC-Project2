@@ -1990,7 +1990,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 22.101252
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2030,7 +2030,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 757476461}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 48.632004, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
