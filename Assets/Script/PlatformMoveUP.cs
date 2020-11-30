@@ -28,7 +28,7 @@ public class PlatformMoveUP : MonoBehaviour
         else
         {
             direction = new Vector3(0f, -1f, 0f);
-            if (currentPosition.y <= 0.5f)
+            if (currentPosition.y <= 0f)
             {
                 flag = true;
             }
