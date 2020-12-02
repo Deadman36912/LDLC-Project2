@@ -23,5 +23,6 @@ public class ProjectileMove : MonoBehaviour
 
 
         rigidbody.MovePosition(newPosition);
+        Destroy(gameObject, 5f);
     }
 }
