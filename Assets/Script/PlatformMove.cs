@@ -4,41 +4,30 @@ using UnityEngine;
 
 public class PlatformMove : MonoBehaviour
 {
-    
+
     Rigidbody rigidbody;
-    bool flag;
+    [SerializeField]
+    Vector3 currentPosition;
+    Vector3 direction;
+    float speed = 2f;
+    [SerializeField]
+    int sens = 1;
 
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        flag = true;
     }
 
     void FixedUpdate()
     {
-        Vector3 currentPosition = transform.position;
-        Vector3 direction;
-        if(flag == true)
-        {
-            direction = new Vector3(1f, 0f, 0f);
-            if(currentPosition.x >= 5.0f)
-            {
-                flag = false;
-            }
-        }
-        else
-        {
-            direction = new Vector3(-1f, 0f, 0f);
-            if (currentPosition.x <= -4.5f)
-            {
-                flag = true;
-            }
-        }
+        currentPosition = transform.position;
 
-        float speed = 2f;
-        Vector3 newPosition = currentPosition + direction * speed * Time.deltaTime;
+        float moveValue = speed * Time.deltaTime;
+        //distanceParcourue += moveValue;
 
 
+
+        Vector3 newPosition = currentPosition + direction * sens * moveValue;
         rigidbody.MovePosition(newPosition);
     }
 }

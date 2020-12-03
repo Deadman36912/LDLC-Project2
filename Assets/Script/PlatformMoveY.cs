@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformMoveUP : MonoBehaviour
+public class PlatformMoveY : MonoBehaviour
 {
     Rigidbody rigidbody;
     bool flag;
